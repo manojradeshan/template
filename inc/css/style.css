@@ -1,0 +1,120 @@
+:root {
+  --light-bg: #fcf7f6;
+  --purple: #3b3a64;
+  --orange: #f1642b;
+  --yellow: #eda444;
+  --dark-purple: #33475b;
+  --dark-blue: #09202c;
+  --shadow: 0px 0px 20px 0px #aeaeae;
+  --animation: all 0.3s ease-in;
+  --transform-scale: scale(1.03);
+  --transform-left: translate(-5%, -50%);
+  --border-left: 2px solid var(--purple);
+  --border-right: 2px solid var(--purple);
+  --border-bottom: 2px solid var(--purple);
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--purple);
+  transition: var(--animation);
+}
+
+a:hover {
+  color: var(--yellow);
+}
+.a-not-hover:hover {
+  color: var(--purple) !important;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 100vh;
+}
+
+footer {
+  min-height: 100px;
+}
+
+.main-wrapper {
+  min-height: calc(100vh - 100px);
+}
+
+a {
+  color: var(--purple);
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+}
+
+.text1 {
+  color: #f1642b;
+}
+
+.bg1 {
+  background: #f1642b;
+}
+
+.text2 {
+  color: #3b3a64;
+}
+
+.bg2 {
+  background: #3b3a64;
+}
+
+.font1 {
+  font-family: "Inter", sans-serif;
+}
+
+.font2 {
+  font-family: "Gentium Plus", serif;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* responssive css start */
+
+/* `xxl` extra-large devices (large desktops, less than 1400px) */
+@media (max-width: 1400px) {
+}
+
+/* `xl` extra-large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+}
+
+/* `lg` large devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+}
+
+/* `md` medium  devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+}
+
+/* `sm` small devices (portrait phones, less than 576px) */
+@media (max-width: 578px) {
+}
+
+/* `xs` extra-small devices (phones, less than 320px) */
+@media (max-width: 320px) {
+}
+
+/* responssive css end */
